@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Тимофей Лобанов](https://up.htmlacademy.ru/htmlcss/28/user/1116605).
-* Наставник: `Неизвестно`.
+- Студент: [Тимофей Лобанов](https://up.htmlacademy.ru/htmlcss/28/user/1116605).
+- Наставник: [Евгений Карпов](https://htmlacademy.ru/profile/id70583)
 
 ---
 
