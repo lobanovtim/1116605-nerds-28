@@ -7,31 +7,86 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
           <a href="index.html">
             <img
               src="img/nerds-logo.svg"
-              width="159.87"
-              height="65.02"
+              width="160"
+              height="65"
               alt="Логотип дизайн-студии «Nerds»"
             />
           </a>
-          <ul>
-          <li><a href="blank.html">студия</a></li>
-          <li><a href="blank.html">клиенты</a></li>
-          <li><a href="catalog.html">магазин</a></li>
-          <li><a href="blank.html">контакты</a></li>
+          <ul class="menu">
+          <li><a href="blank.html" class="menu_item">студия</a></li>
+          <li><a href="blank.html" class="menu_item">клиенты</a></li>
+          <li><a href="catalog.html" class="menu_item">магазин</a></li>
+          <li><a href="blank.html" class="menu_item">контакты</a></li>
           </ul>
           <a href="blank.html">корзина</a>
         </nav>
       </header>
+      <aside class="container-filter">
+        <h2>Фильтр товаров</h2>
+        <!-- Прячем заголовок, когда создадим файл CSS:
+       .visually-hidden {
+   position: absolute;
+   clip: rect(0 0 0 0);
+   width: 1px;
+   height: 1px;
+   margin: -1px;} -->
+        <form action="https://echo.nerds.ru" method="get">
+          <fieldset>
+            <label for="cost">Стоимость</label>
+            0 <input type="range" id="cost" name="cost" min="0" max="15000" step="500"> 15000
+          </fieldset>
+          <fieldset>
+            <legend>сетка</legend>
+            <ul>
+              <li>
+                <input type="radio" name="view-grid" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="view-grid" value="hair-fix" id="filter-fix">
+                <label for="filter-fix">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="view-grid" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="block-of-benefits" id="filter-block-of-benefits">
+                <label for="filter-block-of-benefits">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </aside>
       <main>
       <h1>Мазагин готовых шаблонов</h1> 
-      <aside>
-        <h2>Фильтр товаров</h2>
-        <!-- Здесь будет форма фильтра -->
-      </aside>
-      <section>
+      <section class="container-items">
         <h2 class="visually-hidden">Список готовых шаблонов</h2>
          <!-- Прячем заголовок, когда создадим файл CSS:
        .visually-hidden {
@@ -40,10 +95,20 @@
    width: 1px;
    height: 1px;
    margin: -1px;} -->
+   <div class="container-filter-sort">
+     <ul>
+      <p>сортировать</p>
+       <li>по цене</li>
+       <li>по типу</li>
+       <li>по названию</li>
+
+     </ul>
+   </div>
+   <div class="container">
         <ul>
           <li>
             <a href="blank.html">
-                <img src="img/img-sedona 1.jpg" width="360" height="576" alt="Информационный сайт для туристов «SEDONA»">
+                <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон информационного сайта для туристов «SEDONA»">
             </a>
                 <h3>SEDONA</h3>
                 <p>Информационный сайт<br>для туристов
@@ -52,7 +117,7 @@
           </li>
           <li>
             <a href="blank.html">
-                <img src="img/img-pink 1.jpg" width="360" height="576" alt="Взгляните на жизнь ярче с «PINK»">
+                <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта «PINK»">
             </a>
                 <h3>PINK</h3>
                 <p>Взгляните на жизнь ярче!
@@ -61,7 +126,7 @@
           </li>
           <li>
             <a href="blank.html">
-                <img src="img/img-barbershop 1.jpg" width="360" height="576" alt="Барбершоп «BORODINSKI»">
+                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта барбершопа «BORODINSKI»">
             </a>
                 <h3>BORODINSKI</h3>
                 <p>Барбершоп
@@ -70,7 +135,7 @@
           </li>
           <li>
             <a href="blank.html">
-                <img src="img/img-mishka 1.jpg" width="360" height="576" alt="Милые штуки ручной работы для дома «MISHKA»">
+                <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта милых штучек ручной работы для дома «MISHKA»>
             </a>
                 <h3>MISHKA</h3>
                 <p>Милые штуки ручной<br>работы для дома
@@ -79,7 +144,7 @@
           </li>
           <li>
             <a href="blank.html">
-                <img src="img/img-aplus 1.jpg" width="360" height="576" alt="Учеба еще никогда не была такой интересной «UA+»">
+                <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта "Учеба еще никогда не была такой интересной «UA+»"">
             </a>
                 <h3>UA+</h3>
                 <p>Учеба еще никогда<br>не была такой интересной!
@@ -88,7 +153,7 @@
           </li>
           <li>
             <a href="blank.html">
-                <img src="img/img-kvast 1.jpg" width="360" height="576" alt="Крафтовый квас всему голова «КВАСТ»">
+                <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта крафтового кваса «КВАСТ»">
             </a>
                 <h3>КВАСТ</h3>
                 <p>Крафтовый квас<br>всему голова 
@@ -96,24 +161,54 @@
             </p>
           </li>
         </ul>
+        <div class="container-page-novigation">
+        <ul>
+          <li>
+            <a>1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">следующая</a>
+          </li>
+        </ul>
+        </div>
+        </div>
       </section>
       </main>
       <footer>
-          <ul>
-            <li>
-              <a href="#">Вконтакте</a>
-            </li>
-            <li>
-              <a href="#">Фейсбук</a>
-            </li>
-            <li>
-              <a href="#">Инстаграм</a>
-            </li>
-          </ul>
-          <article>
-          <h4>Давайте дружить, это выгодно!</h4>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </article>
-       </footer>
+        <section class="container-map">
+          <div>Карта
+            <div>
+              <p>NЁRDS DESIGN STUDIO
+              <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+              тел.<a href="tel: +7 (812) 275-75-75">+7 (812) 275-75-75</a>
+              <button type="button">напишите нам</button>
+            </p>
+            </div>
+          </div>
+        </section>
+        <section>
+    <ul>
+      <li>
+        <a href="#">Вконтакте</a>
+      </li>
+      <li>
+        <a href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a href="#">Инстаграм</a>
+      </li>
+    </ul>
+    <article>
+      <h6>Давайте дружить, это выгодно!</h6>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </article>
+  </section>
+  </footer>
 </body>
 </html>
