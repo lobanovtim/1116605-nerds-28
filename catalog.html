@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title>Мазагин готовых шаблонов</title>
 </head>
-</head>
 <body>
-  <header>
-    <nav class="container nav">
-      <a href="index.html">
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="index.html">
         <img
           src="img/nerds-logo.svg"
           width="160"
@@ -16,15 +15,17 @@
           alt="Логотип дизайн-студии «Nerds»"
         />
       </a>
-      <ul class="nav-list">
-        <li class="nav-item"><a class= "nav-link" href="blank.html">студия</a></li>
-        <li class="nav-item"><a class= "nav-link" href="blank.html">клиенты</a></li>
-        <li class="nav-item"><a class= "nav-link" href="catalog.html">магазин</a></li>
-        <li class="nav-item"><a class= "nav-link" href="blank.html">контакты</a></li>
-      </ul>
-      <a class="basket" href="blank.html">корзина</a>
-    </nav>
-  </header>
+      <nav class="list">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="blank.html">студия</a></li>
+          <li class="nav-item"><a href="blank.html">клиенты</a></li>
+          <li class="nav-item"><a href="catalog.html">магазин</a></li>
+          <li class="nav-item"><a href="blank.html">контакты</a></li>
+        </ul>
+      </nav>
+        <a class="basket" href="blank.html">корзина</a>
+      </div>
+   </header>
    <div class="container">
       <aside class="container-filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -79,18 +80,21 @@
         </form>
       </aside>
       <main>
-      <h1>Мазагин готовых шаблонов</h1> 
+        <div class="container">
+          <h1>Мазагин готовых шаблонов</h1>
+        </div>
       <section class="container-items">
        <h2 class="visually-hidden">Список готовых шаблонов</h2>
    <div class="container-sort">
+     <p class="sort-title">сортировать</p>
      <ul class="sort">
-      <p>сортировать</p>
-       <li class="sort-price">по цене</li>
+       <li class="sort-type">по цене</li>
        <li class="sort-type">по типу</li>
-       <li class="sort-title">по названию</li>
-       <li class="sort-dir-up">up</li> <!--- svg-иконку добавим в css -->
+       <li class="sort-type">по названию</li>
+      </ul>
+       <li class="sort-dir-up">up</li>
        <li class="sort-dir-down">down</li>
-     </ul>
+      <!--- svg-иконку добавим в css -->
    </div>
    <div class="container">
         <ul class="catalog">
@@ -123,7 +127,7 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="blank.html">
-                <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта милых штучек ручной работы для дома «MISHKA»>
+                <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта милых штучек ручной работы для дома «MISHKA»">
             </a>
                 <h3>MISHKA</h3>
                 <p>Милые штуки ручной<br>работы для дома
@@ -132,7 +136,7 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="blank.html">
-                <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта "Учеба еще никогда не была такой интересной «UA+»"">
+                <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта «UA+»">
             </a>
                 <h3>UA+</h3>
                 <p>Учеба еще никогда<br>не была такой интересной!
@@ -166,15 +170,14 @@
         </div>
       </section>
       </main>
-      </div>
       <footer class="footer">
         <section class="container-map">
           <div class="map">Карта
-            <div class="container-contact">
-              <p>NЁRDS DESIGN STUDIO
+            <div class="contacts">
+              <h5>NЁRDS DESIGN STUDIO</h5>>
               <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-              тел.<a href="tel: +7 (812) 275-75-75">+7 (812) 275-75-75</a>
-              <button class="button-contact" type="button">напишите нам</button>
+              тел.<a href="tel:88122757575">+7 (812) 275-75-75</a>
+              <button class="button-contacts" type="button">напишите нам</button>
             </p>
             </div>
           </div>
@@ -191,11 +194,11 @@
         <a href="#">Инстаграм</a>
       </li>
     </ul>
-    <article class="footer-info">
+    <div class="footer-info">
       <h6>Давайте дружить, это выгодно!</h6>
       <p>Скидка 10% для друзей из социальных сетей.</p>
-    </article>
-  </section>
+    </div>
+        </section>
   </footer>
 </body>
 </html>
