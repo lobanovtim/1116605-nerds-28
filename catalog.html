@@ -6,34 +6,28 @@
 </head>
 </head>
 <body>
-    <header>
-        <nav class="container">
-          <a href="index.html">
-            <img
-              src="img/nerds-logo.svg"
-              width="160"
-              height="65"
-              alt="Логотип дизайн-студии «Nerds»"
-            />
-          </a>
-          <ul class="menu">
-          <li><a href="blank.html" class="menu_item">студия</a></li>
-          <li><a href="blank.html" class="menu_item">клиенты</a></li>
-          <li><a href="catalog.html" class="menu_item">магазин</a></li>
-          <li><a href="blank.html" class="menu_item">контакты</a></li>
-          </ul>
-          <a href="blank.html">корзина</a>
-        </nav>
-      </header>
+  <header>
+    <nav class="container nav">
+      <a href="index.html">
+        <img
+          src="img/nerds-logo.svg"
+          width="160"
+          height="65"
+          alt="Логотип дизайн-студии «Nerds»"
+        />
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item"><a class= "nav-link" href="blank.html">студия</a></li>
+        <li class="nav-item"><a class= "nav-link" href="blank.html">клиенты</a></li>
+        <li class="nav-item"><a class= "nav-link" href="catalog.html">магазин</a></li>
+        <li class="nav-item"><a class= "nav-link" href="blank.html">контакты</a></li>
+      </ul>
+      <a class="basket" href="blank.html">корзина</a>
+    </nav>
+  </header>
+   <div class="container">
       <aside class="container-filter">
-        <h2>Фильтр товаров</h2>
-        <!-- Прячем заголовок, когда создадим файл CSS:
-       .visually-hidden {
-   position: absolute;
-   clip: rect(0 0 0 0);
-   width: 1px;
-   height: 1px;
-   margin: -1px;} -->
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <form action="https://echo.nerds.ru" method="get">
           <fieldset>
             <label for="cost">Стоимость</label>
@@ -60,23 +54,23 @@
             <legend>Особенности:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="slider" id="filter-slider" checked>
+                <input type="checkbox" name="view-grid" value="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
               <li>
-                <input type="checkbox" name="block-of-benefits" id="filter-block-of-benefits">
+                <input type="checkbox"  name="view-grid" value="block-of-benefits" id="filter-block-of-benefits">
                 <label for="filter-block-of-benefits">Блок преимуществ</label>
               </li>
               <li>
-                <input type="checkbox" name="news" id="filter-news" checked>
+                <input type="checkbox"  name="view-grid" value="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
               <li>
-                <input type="checkbox" name="gallery" id="filter-gallery">
+                <input type="checkbox"  name="view-grid" value="gallery" id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
               <li>
-                <input type="checkbox" name="basket" id="filter-basket">
+                <input type="checkbox"  name="view-grid" value="basket" id="filter-basket">
                 <label for="filter-basket">Корзина</label>
               </li>
             </ul>
@@ -87,26 +81,20 @@
       <main>
       <h1>Мазагин готовых шаблонов</h1> 
       <section class="container-items">
-        <h2 class="visually-hidden">Список готовых шаблонов</h2>
-         <!-- Прячем заголовок, когда создадим файл CSS:
-       .visually-hidden {
-   position: absolute;
-   clip: rect(0 0 0 0);
-   width: 1px;
-   height: 1px;
-   margin: -1px;} -->
-   <div class="container-filter-sort">
-     <ul>
+       <h2 class="visually-hidden">Список готовых шаблонов</h2>
+   <div class="container-sort">
+     <ul class="sort">
       <p>сортировать</p>
-       <li>по цене</li>
-       <li>по типу</li>
-       <li>по названию</li>
-
+       <li class="sort-price">по цене</li>
+       <li class="sort-type">по типу</li>
+       <li class="sort-title">по названию</li>
+       <li class="sort-dir-up">up</li> <!--- svg-иконку добавим в css -->
+       <li class="sort-dir-down">down</li>
      </ul>
    </div>
    <div class="container">
-        <ul>
-          <li>
+        <ul class="catalog">
+          <li class="catalog-item">
             <a href="blank.html">
                 <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон информационного сайта для туристов «SEDONA»">
             </a>
@@ -115,8 +103,8 @@
               <button type="button">9 900 ₽</button>
             </p>
           </li>
-          <li>
-            <a href="blank.html">
+          <li class="catalog-item">
+            <a class="catalog-link" href="blank.html">
                 <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта «PINK»">
             </a>
                 <h3>PINK</h3>
@@ -124,8 +112,8 @@
               <button type="button">9 900 ₽</button>
             </p>
           </li>
-          <li>
-            <a href="blank.html">
+          <li class="catalog-item">
+            <a class="catalog-link" href="blank.html">
                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта барбершопа «BORODINSKI»">
             </a>
                 <h3>BORODINSKI</h3>
@@ -133,8 +121,8 @@
               <button type="button">9 900 ₽</button>
             </p>
           </li>
-          <li>
-            <a href="blank.html">
+          <li class="catalog-item">
+            <a class="catalog-link" href="blank.html">
                 <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта милых штучек ручной работы для дома «MISHKA»>
             </a>
                 <h3>MISHKA</h3>
@@ -142,8 +130,8 @@
               <button type="button">9 900 ₽</button>
                 </p>
           </li>
-          <li>
-            <a href="blank.html">
+          <li class="catalog-item">
+            <a class="catalog-link" href="blank.html">
                 <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта "Учеба еще никогда не была такой интересной «UA+»"">
             </a>
                 <h3>UA+</h3>
@@ -151,8 +139,8 @@
               <button type="button">9 900 ₽</button>
             </p>
           </li>
-          <li>
-            <a href="blank.html">
+          <li class="catalog-item">
+            <a class="catalog-link" href="blank.html">
                 <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта крафтового кваса «КВАСТ»">
             </a>
                 <h3>КВАСТ</h3>
@@ -161,8 +149,7 @@
             </p>
           </li>
         </ul>
-        <div class="container-page-novigation">
-        <ul>
+        <ul class="pagination">
           <li>
             <a>1</a>
           </li>
@@ -177,23 +164,23 @@
           </li>
         </ul>
         </div>
-        </div>
       </section>
       </main>
-      <footer>
+      </div>
+      <footer class="footer">
         <section class="container-map">
-          <div>Карта
-            <div>
+          <div class="map">Карта
+            <div class="container-contact">
               <p>NЁRDS DESIGN STUDIO
               <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
               тел.<a href="tel: +7 (812) 275-75-75">+7 (812) 275-75-75</a>
-              <button type="button">напишите нам</button>
+              <button class="button-contact" type="button">напишите нам</button>
             </p>
             </div>
           </div>
         </section>
-        <section>
-    <ul>
+        <section class="container">
+    <ul class="social">
       <li>
         <a href="#">Вконтакте</a>
       </li>
@@ -204,7 +191,7 @@
         <a href="#">Инстаграм</a>
       </li>
     </ul>
-    <article>
+    <article class="footer-info">
       <h6>Давайте дружить, это выгодно!</h6>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </article>
