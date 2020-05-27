@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Мазагин готовых шаблонов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <div class="container">
+    <div class="nav-container">
       <a class="logo" href="index.html">
         <img
           src="img/nerds-logo.svg"
@@ -15,7 +18,7 @@
           alt="Логотип дизайн-студии «Nerds»"
         />
       </a>
-      <nav class="list">
+      <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item"><a href="blank.html">студия</a></li>
           <li class="nav-item"><a href="blank.html">клиенты</a></li>
@@ -27,7 +30,7 @@
       </div>
    </header>
    <div class="container">
-      <aside class="container-filter">
+      <aside class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form action="https://echo.nerds.ru" method="get">
           <fieldset>
@@ -81,20 +84,22 @@
       </aside>
       <main>
         <div class="container">
-          <h1>Мазагин готовых шаблонов</h1>
+          <h1 class="title-page">Мазагин готовых шаблонов</h1>
         </div>
-      <section class="container-items">
+      <section class="items">
        <h2 class="visually-hidden">Список готовых шаблонов</h2>
-   <div class="container-sort">
+   <div class="sort-container">
      <p class="sort-title">сортировать</p>
      <ul class="sort">
        <li class="sort-type">по цене</li>
        <li class="sort-type">по типу</li>
        <li class="sort-type">по названию</li>
       </ul>
+      <ul>
        <li class="sort-dir-up">up</li>
        <li class="sort-dir-down">down</li>
       <!--- svg-иконку добавим в css -->
+      </ul>
    </div>
    <div class="container">
         <ul class="catalog">
@@ -102,54 +107,54 @@
             <a href="blank.html">
                 <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон информационного сайта для туристов «SEDONA»">
             </a>
-                <h3>SEDONA</h3>
+                <h3 class="catalog-title">SEDONA</h3>
                 <p>Информационный сайт<br>для туристов
-              <button type="button">9 900 ₽</button>
+              <button class="button-price coral-button" type="button">9 900 ₽</button>
             </p>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="blank.html">
                 <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта «PINK»">
             </a>
-                <h3>PINK</h3>
+                <h3 class="catalog-title">PINK</h3>
                 <p>Взгляните на жизнь ярче!
-              <button type="button">9 900 ₽</button>
+              <button class="button-price coral-button" type="button">9 900 ₽</button>
             </p>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="blank.html">
                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта барбершопа «BORODINSKI»">
             </a>
-                <h3>BORODINSKI</h3>
+                <h3 class="catalog-title">BORODINSKI</h3>
                 <p>Барбершоп
-              <button type="button">9 900 ₽</button>
+              <button class="button-price coral-button" type="button">9 900 ₽</button>
             </p>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="blank.html">
                 <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта милых штучек ручной работы для дома «MISHKA»">
             </a>
-                <h3>MISHKA</h3>
+                <h3 class="catalog-title">MISHKA</h3>
                 <p>Милые штуки ручной<br>работы для дома
-              <button type="button">9 900 ₽</button>
+              <button class="button-price coral-button" type="button">9 900 ₽</button>
                 </p>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="blank.html">
                 <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта «UA+»">
             </a>
-                <h3>UA+</h3>
+                <h3 class="catalog-title">UA+</h3>
                 <p>Учеба еще никогда<br>не была такой интересной!
-              <button type="button">9 900 ₽</button>
+              <button class="button-price coral-button" type="button">9 900 ₽</button>
             </p>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="blank.html">
                 <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта крафтового кваса «КВАСТ»">
             </a>
-                <h3>КВАСТ</h3>
+                <h3 class="catalog-title">КВАСТ</h3>
                 <p>Крафтовый квас<br>всему голова 
-              <button type="button">9 900 ₽</button>
+              <button class="button-price coral-button" type="button">9 900 ₽</button>
             </p>
           </li>
         </ul>
@@ -171,7 +176,7 @@
       </section>
       </main>
       <footer class="footer">
-        <section class="container-map">
+        <section class="map-container">
           <div class="map">Карта
             <div class="contacts">
               <h5>NЁRDS DESIGN STUDIO</h5>>
