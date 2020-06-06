@@ -9,26 +9,28 @@
 </head>
 <body>
   <header class="header">
-    <div class="container style-wrapper">
-      <a class="logo" href="index.html">
-        <img
-          src="img/nerds-logo.svg"
-          width="160"
-          height="65"
-          alt="Логотип дизайн-студии «Nerds»"
-        />
-      </a>
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="blank.html">студия</a></li>
-          <li class="nav-item"><a href="blank.html">клиенты</a></li>
-          <li class="nav-item"><a href="catalog.html">магазин</a></li>
-          <li class="nav-item"><a href="blank.html">контакты</a></li>
-        </ul>
-      </nav>
-        <a class="basket" href="blank.html">корзина</a>
-      </div>
-   </header>
+    <div class="container">
+      <div class="style-wrapper">
+        <a class="logo" href="index.html">
+          <img
+            src="img/nerds-logo.svg"
+            width="160"
+            height="65"
+            alt="Логотип дизайн-студии «Nerds»"
+          />
+        </a>
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="blank.html">студия</a></li>
+            <li class="nav-item"><a href="blank.html">клиенты</a></li>
+            <li class="nav-item"><a href="catalog.html">магазин</a></li>
+            <li class="nav-item"><a href="blank.html">контакты</a></li>
+          </ul>
+        </nav>
+          <a class="basket" href="blank.html">корзина</a>
+        </div>
+     </header>
+   <div class="catalog-wrapper"
    <div class="container">
       <aside class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -79,10 +81,10 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button button-show" type="submit">Показать</button>
         </form>
       </aside>
-      <main>
+      <main class="page-catalog">
         <div class="container">
           <h1 class="title-page">Мазагин готовых шаблонов</h1>
         </div>
@@ -104,17 +106,19 @@
       </li>
        </ul>
    </div>
-   <div class="container">
+   <div>
         <ul class="catalog">
           <li class="catalog-item">
             <a href="blank.html">
                 <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон информационного сайта для туристов «SEDONA»">
             </a>
             <div class="popup-buy">
+              <div class="popup-buy-wrapper">
                 <h3 class="catalog-title">SEDONA</h3>
                 <p class="price-item">Информационный сайт<br>для туристов
               <button class="button-price button--coral" type="button">9 900 ₽</button>
             </p>
+            </div>
           </div>
           </li>
           <li class="catalog-item">
@@ -122,10 +126,12 @@
                 <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта «PINK»">
             </a>
             <div class="popup-buy">
+              <div class="popup-buy-wrapper">
                 <h3 class="catalog-title">PINK</h3>
                 <p class="price-item">Взгляните на жизнь ярче!
               <button class="button-price button--coral" type="button">9 900 ₽</button>
             </p>
+            </div>
              </div>
           </li>
           <li class="catalog-item">
@@ -133,10 +139,12 @@
                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта барбершопа «BORODINSKI»">
             </a>
             <div class="popup-buy">
+              <div class="popup-buy-wrapper">
                 <h3 class="catalog-title">BORODINSKI</h3>
                 <p class="price-item">Барбершоп
               <button class="button-price button--coral" type="button">9 900 ₽</button>
             </p>
+          </div>
           </div>
           </li>
           <li class="catalog-item">
@@ -144,10 +152,12 @@
                 <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта милых штучек ручной работы для дома «MISHKA»">
             </a>
             <div class="popup-buy">
+              <div class="popup-buy-wrapper">
                 <h3 class="catalog-title">MISHKA</h3>
                 <p class="price-item">Милые штуки ручной<br>работы для дома
               <button class="button-price button--coral" type="button">9 900 ₽</button>
                 </p>
+              </div>
               </div>
           </li>
           <li class="catalog-item">
@@ -155,10 +165,12 @@
                 <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта «UA+»">
             </a>
             <div class="popup-buy">
+              <div class="popup-buy-wrapper">
                 <h3 class="catalog-title">UA+</h3>
                 <p class="price-item">Учеба еще никогда<br>не была такой интересной!
               <button class="button-price button--coral" type="button">9 900 ₽</button>
             </p>
+            </div>
           </div>
           </li>
           <li class="catalog-item">
@@ -166,10 +178,12 @@
                 <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта крафтового кваса «КВАСТ»">
             </a>
             <div class="popup-buy">
+              <div class="popup-buy-wrapper">
                 <h3 class="catalog-title">КВАСТ</h3>
                 <p class="price-item">Крафтовый квас<br>всему голова 
               <button class="button-price button--coral" type="button">9 900 ₽</button>
             </p>
+            </div>
           </div>
           </li>
         </ul>
@@ -184,51 +198,57 @@
             <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">следующая</a>
+            <a class="pagination-link pagination-next" href="#">следующая</a>
           </li>
         </ul>
         </div>
       </section>
       </main>
+      </div>
       <footer class="footer">
-        <section class="container">
+        <section>
           <div class="map">
             Карта
-            <div class="contacts">
-              <h5 class="contacts-title">NЁRDS DESIGN STUDIO</h5>
-              <address class="address">
-                191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-              </address>
-              <span class="phone-number">
-                тел.<a  class="phone-number" href="tel:88122757575">+7 (812) 275-75-75</a>
-              </span>
-              <button class="button button-contacts" type="button">напишите нам</button>
-            </div>
+            <div class="contacts-wrapper">
+              <div class="contacts">
+                <h5 class="contacts-title">NЁRDS DESIGN STUDIO</h5>
+                <address class="address">
+                  191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                </address>
+                <br>
+                <span class="phone-number">
+                  тел.<a  class="phone-number" href="tel:88122757575">+7 (812) 275-75-75</a>
+                </span>
+                <button class="button button-contacts" type="button">напишите нам</button>
+              </div>
+              </div>
           </div>
         </section>
         <section class="container">
-          <ul class="social-icons">
-            <li>
-              <a class="social-item social-item--vk" href="#" aria-label="Вконтакте">
-                <span class="visually-hidden">ССылка на нашу страничку в Вконтакте</span>
-              </a>
-            </li>
-            <li>
-              <a class="social-item social-item--fb" href="#" aria-label="Фейсбук">
-                <span class="visually-hidden">ССылка на нашу страничку в Фейсбук</span>
-              </a>
-            </li>
-            <li>
-              <a class="social-item social-item--inst" href="#" aria-label="Инстаграм">
-                <span class="visually-hidden">ССылка на наш профиль в Инстаграм</span>
-              </a>
-            </li>
-          </ul>
-          <div class="footer-info">
-            <h6 class="footer-tagline">Давайте дружить, это выгодно!</h6>
-            <p class="footer-content">Скидка 10% для друзей из социальных сетей.</p>
+          <div class="social-icons-wrapper">
+            <ul class="social-icons">
+              <li>
+                <a class="social-item social-item--vk" href="#" aria-label="Вконтакте">
+                  <span class="visually-hidden">ССылка на нашу страничку в Вконтакте</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-item social-item--fb" href="#" aria-label="Фейсбук">
+                  <span class="visually-hidden">ССылка на нашу страничку в Фейсбук</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-item social-item--inst" href="#" aria-label="Инстаграм">
+                  <span class="visually-hidden">ССылка на наш профиль в Инстаграм</span>
+                </a>
+              </li>
+            </ul>
+            <div class="footer-info">
+              <h6 class="footer-tagline">Давайте дружить, это выгодно!</h6>
+              <p class="footer-content">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
           </div>
-        </section>
-      </footer>
+          </section>
+        </footer>
 </body>
 </html>
