@@ -9,8 +9,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <div class="style-wrapper">
+    <nav class="container">
         <a class="logo" href="index.html">
           <img
             src="img/nerds-logo.svg"
@@ -18,19 +17,18 @@
             height="65"
             alt="Логотип дизайн-студии «Nerds»"
           />
-        </a>
-        <nav class="navigation">
+        </a> 
           <ul class="nav-list">
             <li class="nav-item"><a href="blank.html">студия</a></li>
             <li class="nav-item"><a href="blank.html">клиенты</a></li>
             <li class="nav-item"><a href="catalog.html">магазин</a></li>
             <li class="nav-item"><a href="blank.html">контакты</a></li>
           </ul>
-        </nav>
           <a class="basket" href="blank.html">корзина</a>
-        </div>
+        </nav>
+        <h1 class="title-page container">Мазагин готовых шаблонов</h1>
      </header>
-     <div class="catalog-wrapper">
+     <div class="container catalog-wrapper">
       <aside class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form action="https://echo.nerds.ru" method="get">
@@ -58,23 +56,23 @@
           <fieldset>
             <legend class="legend">Особенности:</legend>
             <ul class="input-radio-list">
-              <li class="filter-option filter-checkbox"></li>
+              <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="view-grid" value="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
-              <li class="filter-option filter-checkbox"></li>
+              <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"  name="view-grid" value="block-of-benefits" id="filter-block-of-benefits">
                 <label for="filter-block-of-benefits">Блок преимуществ</label>
               </li>
-              <li class="filter-option filter-checkbox"></li>
+              <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"  name="view-grid" value="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
-              <li class="filter-option filter-checkbox"></li>
+              <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"  name="view-grid" value="gallery" id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
-              <li class="filter-option filter-checkbox"></li>
+              <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"  name="view-grid" value="basket" id="filter-basket">
                 <label for="filter-basket">Корзина</label>
               </li>
@@ -84,13 +82,10 @@
         </form>
       </aside>
       <main class="page-catalog">
-        <div class="container">
-          <h1 class="title-page">Мазагин готовых шаблонов</h1>
-        </div>
       <section class="items">
        <h2 class="visually-hidden">Список готовых шаблонов</h2>
    <div class="sort-container">
-     <p class="sort-title">сортировать</p>
+     <p class="sort-title">сортировать:</p>
      <ul class="sort">
        <li class="sort-type">по цене</li>
        <li class="sort-type">по типу</li>
@@ -98,10 +93,10 @@
       </ul>
       <ul class="sort-dir">
         <li class="sort-dir-down">
-          <input type="image" src="/img/icon-down-dir.svg" aria-label="Сортировать по убыванию"></input>
+          <input type="image" src="/img/icon-down-dir.svg" alt="Сортировать по убыванию">
         </li>
         <li class="sort-dir-up">
-        <input type="image" src="/img/icon-down-dir.svg" aria-label="Сортировать по возрастанию"></input>
+        <input type="image" src="/img/icon-down-dir.svg" alt="Сортировать по возрастанию">
       </li>
        </ul>
    </div>
