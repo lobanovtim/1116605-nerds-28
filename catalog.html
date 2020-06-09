@@ -32,11 +32,34 @@
       <aside class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form action="https://echo.nerds.ru" method="get">
-          <fieldset>
-            <label for="cost" class="legend">Стоимость</label>
-            0 <input type="range" id="cost" name="cost" min="0" max="15000" step="500"> 15000
-          </fieldset>
-          <fieldset>
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                    width: 30%;
+                    margin-left: 20%
+                  "></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                  left: 20%
+                "></div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                  left: 50%
+                "></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="15000">
+                </label>
+              </div>
+            </div>
+        </fieldset>
+          <fieldset class="filter-item">
             <legend class="legend">сетка</legend>
             <ul class="input-radio-list">
               <li class="filter-option filter-radio">
@@ -53,7 +76,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-item">
             <legend class="legend">Особенности:</legend>
             <ul class="input-radio-list">
               <li class="filter-option filter-checkbox">
@@ -100,7 +123,6 @@
       </li>
        </ul>
    </div>
-   <div>
         <ul class="catalog">
           <li class="catalog-item">
             <a href="blank.html">
@@ -195,15 +217,15 @@
             <a class="pagination-link pagination-next" href="#">следующая</a>
           </li>
         </ul>
-        </div>
       </section>
       </main>
       </div>
       <footer class="footer">
-        <section>
-          <div class="map">
-            Карта
-            <div class="contacts-wrapper">
+        <section class="information">
+          <div class="modal modal-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1440" height="416" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>            <h5 class="visually-hidden">Как нас найти</h5>
+          </div>
+          <div class="contacts-wrapper">
               <div class="contacts">
                 <h5 class="contacts-title">NЁRDS DESIGN STUDIO</h5>
                 <address class="address">
@@ -215,8 +237,7 @@
                 </span>
                 <button class="button button-contacts" type="button">напишите нам</button>
               </div>
-              </div>
-          </div>
+            </div>
         </section>
         <section class="container">
           <div class="social-icons-wrapper">
