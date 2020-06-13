@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Мазагин готовых шаблонов</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
@@ -34,7 +34,7 @@
             <div class="slider-content">
               <h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
               <p class="slider-text">
-                Математически выверенный дизайн для вашего сайта или мобильного
+                Математически выверенный дизайн<br>для вашего сайта или мобильного
                 приложения.
               </p>
               <a class="button slider-button" href="#">узнать больше</a>
@@ -179,7 +179,7 @@
                 alt="Логотип барбершопа Borodinski"
               />
             </li>
-            <li class="logo-patrners">
+            <li class="logo-partners">
               <img
                 src="img/logo-pink.svg"
                 width="185"
@@ -251,21 +251,21 @@
           <p class="input-title">Ваше имя:</p>
           <p>
             <label class="visually-hidden" for="name">Ваше имя:</label>
-            <input class ="input-content" id="name" type="text" name="name" placeholder="Имя Фамилия">
+            <input class ="input-content input-field-data" id="name" type="text" name="name" placeholder="Имя Фамилия" required>
           </p>
         </div>
        <div class="email">
         <p class="input-title">Ваше email:</p>
         <p>
           <label class="visually-hidden" for="email">Ваше email:</label>
-          <input class ="input-content" id="email" type="email" name="email" placeholder="email@exaple.com">
+          <input class ="input-content input-field-data" id="email" type="email" name="email" placeholder="email@exaple.com" required>
         </p>
        </div>
        <div class="text">
         <p class="input-title">Текст письма:</p>
         <p>
           <label class="visually-hidden" for="text">Текст письма:</label>
-          <input class ="input-text" id="text" type="text" name="text" placeholder="В свободной форме">
+          <textarea class="input-content input-text input-field" rows="6" cols="40" name="text" id="text" required="" placeholder="В свободной форме"></textarea>
         </p>
        </div>
         <button class="button button-send" type="submit">Отправить</button>
