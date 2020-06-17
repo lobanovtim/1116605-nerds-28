@@ -374,7 +374,7 @@ img {
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: var(--basic-white-grey);
-  padding: 50px 0 38px 0;
+  padding: 50px 0 42px 0;
 
 }
 
@@ -390,6 +390,7 @@ img {
 }
 
 .partners-item {
+  align-items: center;
   position: relative;
   line-height: 1;
   margin: 0;
@@ -398,32 +399,32 @@ img {
 
 .html-academy {
   display: inline-block;
-  margin: 3px 0 0px 32px;
+  margin: 7px 0 0px 32px;
 }
 
 .barbershop {
   display: inline-block;
-  margin: -4px 0 0px 24px;
+  margin: -4px 0 0px 47px;
 }
 
 .pink {
   display: inline-block;
-  margin: 0px 0px 8px 35px;
+  margin: 0px 0px 4px 60px;
 }
 
 .mishka {
   display: inline-block;
-  margin: -2px 0 0 60px;
+  margin: 1px 0 0 63px;
 }
 
 .partners-item:nth-child(4n),
-.partners-item:nth-child(4n+3) {
-  width: 276px;
+.partners-item:nth-child(4n+1) {
+  width: 279px;
 }
 
-.partners-item:nth-child(4n+1),
-.partners-item:nth-child(4n+2) {
-  width: 298px;
+.partners-item:nth-child(4n+2),
+.partners-item:nth-child(4n+3) {
+  width: 301px;
 }
 
 .partners-item:not(:last-child)::after {
@@ -432,9 +433,9 @@ img {
   width: 2px;
   height: 52px;
   background-color: var(--basic-white-grey);
-  top: 44%;
-  left: 93%;
-  transform: translate(50%,-50%);
+  top: 45%;
+  left: 100%;
+  transform: translate(-50%,-50%);
 }
 
 /* Buttons */
@@ -1000,9 +1001,9 @@ opacity: 1;
   margin-bottom: 30px;
   padding-top: 40px;
   background-image: url("../img/browser.svg");
-  background-color: rgba(1, 1, 1, 0.1);
   background-repeat: no-repeat;
   background-position: 0 0;
+  line-height: 1;
 }
 
 .catalog-item a {
@@ -1029,6 +1030,7 @@ opacity: 1;
   text-align: center;
   background-color: var(--basic-white-grey);
   padding: 26px 80px 44px 80px;
+  margin-bottom: 4px;
 }
 
 .catalog-item:hover .popup-buy {
@@ -1043,7 +1045,7 @@ opacity: 1;
 .social-icons-wrapper {
   margin: 68px 0;
   display: flex;
-  height: 81px;
+  height: 79px;
   width: 1080px;
 }
 
@@ -1051,7 +1053,7 @@ opacity: 1;
   display: flex;
   justify-content: space-between;
   width: 261px;
-  max-height: 81px;
+  max-height: 79px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1059,8 +1061,8 @@ opacity: 1;
 
 .social-item {
   display: inline-block;
-  width: 81px;
-  height: 81px;
+  width: 79px;
+  height: 79px;
   border-radius: 50%;
   background-color: var(--basic-white-grey);
 }
