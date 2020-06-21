@@ -243,33 +243,36 @@
         </div>
         </section>
       </footer>
-      <section class="popup">
-      <h6 class="popup-title">Напишите нам</h6>
-      <button class="cross button button-cross" aria-label="Закрыть окно"></button>
-      <form class="form-box" action="https://form.ru" method="post">
-        <div class="name">
-          <p class="input-title">Ваше имя:</p>
-          <p>
-            <label class="visually-hidden" for="name">Ваше имя:</label>
-            <input class ="input-content input-field-data" id="name" type="text" name="name" placeholder="Имя Фамилия" required>
-          </p>
+      <section class="popup-close">
+        <div class="popup">
+          <h6 class="popup-title">Напишите нам</h6>
+          <button class="cross button button-cross" aria-label="Закрыть окно"></button>
+          <form class="form-box" action="https://form.ru" method="post">
+            <div class="name">
+              <p class="input-title">Ваше имя:</p>
+              <p>
+                <label class="visually-hidden" for="name">Ваше имя:</label>
+                <input class ="input-content input-field-data username" id="name" type="text" name="name" placeholder="Имя Фамилия" required>
+              </p>
+            </div>
+           <div class="email">
+            <p class="input-title">Ваше email:</p>
+            <p>
+              <label class="visually-hidden" for="email">Ваше email:</label>
+              <input class ="input-content input-field-data" id="email" type="email" name="email" placeholder="email@exaple.com" required>
+            </p>
+           </div>
+           <div class="text">
+            <p class="input-title">Текст письма:</p>
+            <p>
+              <label class="visually-hidden" for="text">Текст письма:</label>
+              <textarea class="input-content input-text input-field" rows="4" cols="40" name="text" id="text" required="" placeholder="В свободной форме"></textarea>
+            </p>
+           </div>
+            <button class="button button-send" type="submit">Отправить</button>
+          </form>
         </div>
-       <div class="email">
-        <p class="input-title">Ваше email:</p>
-        <p>
-          <label class="visually-hidden" for="email">Ваше email:</label>
-          <input class ="input-content input-field-data" id="email" type="email" name="email" placeholder="email@exaple.com" required>
-        </p>
-       </div>
-       <div class="text">
-        <p class="input-title">Текст письма:</p>
-        <p>
-          <label class="visually-hidden" for="text">Текст письма:</label>
-          <textarea class="input-content input-text input-field" rows="4" cols="40" name="text" id="text" required="" placeholder="В свободной форме"></textarea>
-        </p>
-       </div>
-        <button class="button button-send" type="submit">Отправить</button>
-      </form>
     </section>
+  <script src="/js/popup.js"></script>  
   </body>
 </html>
