@@ -47,10 +47,10 @@
               alt="Узнать больше о Nerds"
             />
           </li>
-          <li class="slider-item visually-hidden">
-            <div class="slider-content">
+          <li class="slider-item slide-showing">
+            <div class="slider-content slide-3">
               <h2 class="slider-title">Любим математику как никто другой</h2>
-              <p class="slider-content">
+              <p class="slider-text">
                 Никакого креатива, только математические формулы для расчета
                 идеальных пропорций
               </p>
@@ -63,10 +63,10 @@
               alt="Узнать больше о Nerds"
             />
           </li>
-          <li class="slider-item visually-hidden">
+          <li class="slider-item">
             <div class="slider-content">
               <h2 class="slider-title">Только ночь, только хардкор</h2>
-              <p class="slider-content">
+              <p class="slider-text">
                 Работать днем, как все? Мы против этого. Ближе к полуночи работа
                 только начинается.
               </p>
@@ -78,6 +78,20 @@
               height="431"
               alt="Узнать больше о Nerds"
             />
+          </li>
+        </ul>
+        <ul class="slider-controls-list">
+          <li class="slider-control">
+            <input class="visually-hidden input-slider-control" type="radio" id="first-slide" checked>
+            <label for="first-slide"></label>
+          </li>
+          <li class="slider-control">
+            <input class="visually-hidden input-slider-control" type="radio" id="second-slide" checked>
+            <label for="second-slide"></label>
+          </li>
+          <li class="slider-control">
+            <input class="visually-hidden input-slider-control" type="radio" id="third-slide" checked>
+            <label for="third-slide"></label>
           </li>
         </ul>
       </section>
@@ -197,27 +211,25 @@
           </ul>
       </section>
     </main>
-    <footer class="footer">
-      <section class="information">
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1440" height="416" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-          <h5 class="visually-hidden">Как нас найти</h5>
-        </div>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1440" height="416" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+        <h5 class="visually-hidden">Как нас найти</h5>
         <div class="contacts-wrapper">
-            <div class="contacts">
-              <h5 class="contacts-title">NЁRDS DESIGN STUDIO</h5>
-              <address class="address">
-                191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8
-              </address>
-              <br>
-              <span class="phone-number">
-                тел. <a  class="phone-number" href="tel:88122757575">+7 (812) 275-75-75</a>
-              </span>
-              <button class="button button-contacts" type="button">напишите нам</button>
-            </div>
+          <div class="contacts">
+            <h5 class="contacts-title">NЁRDS DESIGN STUDIO</h5>
+            <address class="address">
+              191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8
+            </address>
+            <br>
+            <span class="phone-number">
+              тел. <a  class="phone-number" href="tel:88122757575">+7 (812) 275-75-75</a>
+            </span>
+            <button class="button button-contacts" type="button">напишите нам</button>
           </div>
-      </section>
-      <section class="container">
+      </div>
+    </section>
+    <footer class="footer">
+    <section class="container">
         <div class="social-icons-wrapper">
           <ul class="social-icons">
             <li>
@@ -241,8 +253,8 @@
             <p class="footer-content">Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div>
-        </section>
-      </footer>
+      </section>
+    </footer>
       <section class="popup-close">
         <div class="popup">
           <h6 class="popup-title">Напишите нам</h6>
@@ -266,13 +278,14 @@
             <p class="input-title">Текст письма:</p>
             <p>
               <label class="visually-hidden" for="text">Текст письма:</label>
-              <textarea class="input-content input-text input-field" rows="4" cols="40" name="text" id="text" required="" placeholder="В свободной форме"></textarea>
+              <textarea class="input-content input-text input-field" rows="4" cols="40" name="text" id="text" placeholder="В свободной форме" required=""></textarea>
             </p>
            </div>
             <button class="button button-send" type="submit">Отправить</button>
           </form>
         </div>
     </section>
-  <script src="/js/popup.js"></script>  
+  <script src="/js/popup.js"></script>
+  <script src="/js/slider.js"></script>  
   </body>
 </html>
