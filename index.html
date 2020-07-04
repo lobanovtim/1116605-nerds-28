@@ -81,18 +81,9 @@
           </li>
         </ul>
         <ul class="slider-controls-list">
-          <li class="slider-control">
-            <input class="visually-hidden input-slider-control" type="radio" id="first-slide" checked>
-            <label for="first-slide"></label>
-          </li>
-          <li class="slider-control">
-            <input class="visually-hidden input-slider-control" type="radio" id="second-slide" checked>
-            <label for="second-slide"></label>
-          </li>
-          <li class="slider-control">
-            <input class="visually-hidden input-slider-control" type="radio" id="third-slide" checked>
-            <label for="third-slide"></label>
-          </li>
+          <li class="dot current-dot" onclick="currentSlide(1)"></li> 
+          <li class="dot" onclick="currentSlide(2)"></li> 
+          <li class="dot" onclick="currentSlide(3)"></li> 
         </ul>
       </section>
     <main class="container">
@@ -286,6 +277,6 @@
         </div>
     </section>
   <script src="/js/popup.js"></script>
-  <script src="/js/slider.js"></script>  
+  <script src="/js/slider.js"></script>
   </body>
 </html>
