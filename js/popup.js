@@ -1,11 +1,10 @@
 var popuplink = document.querySelector(".button-contacts");
-var popup = document.querySelector(".popup-close");
+var popup = document.querySelector(".popup-container");
 var popupClose = popup.querySelector(".button-cross");
 var userName = popup.querySelector(".user-name");
-var userImail = popup.querySelector(".user-imail");
+var userEmail = popup.querySelector(".user-email");
 var form = popup.querySelector(".form-box");
 var mandatory = popup.querySelectorAll(".input-content");
-console.log(mandatory);
 
 var isStorageSupport = true;
 var storage = "";
@@ -18,45 +17,43 @@ try {
 
 
 popuplink.addEventListener("click", function () {
-    popup.classList.add("popup-show");
-    if (storage) {
-        userName.value = storage;
-        userImail.focus();
-      } else {
-        userName.focus();
-      }
-       mandatory.forEach(function(mandatory){
-        mandatory.removeAttribute("required");
-});
+  popup.classList.add("popup-container—show");
+  mandatory.forEach(function (mandatory) {
+    mandatory.removeAttribute("required");
+  });
+  if (storage) {
+    userName.value = storage;
+    userEmail.focus();
+  } else {
+    userName.focus();
+  }
 });
 
 popupClose.addEventListener("click", function (evt) {
-    
-    popup.classList.remove("popup-show");
-    popup.classList.remove("popup-error");
-  });
+
+  popup.classList.remove("popup-container—show");
+  popup.classList.remove("popup-error");
+});
 
 form.addEventListener("submit", function (evt) {
-    if (!userName.value || !userImail.value) {
-        popup.classList.add("popup-error");   
+  if (!userName.value || !userEmail.value) {
+    evt.preventDefault();
+    popup.classList.remove("popup-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("popup-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("name", userName.value);
     }
-        else {
-            if (isStorageSupport) {
-                localStorage.setItem("name", userName.value);
-              }
-        } 
-    });
+  }
+});
 
-    window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          if (popup.classList.contains("popup-show")) {
-                popup.classList.remove("popup-show");
-                popup.classList.remove("popup-error");
-          }
-        }
-      });
-    window.onclick = function(event) {
-       if (event.target == popup) {
-          popup.classList.remove("popup-show");
-        }
-    }  
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("popup-container—show")) {
+      popup.classList.remove("popup-container—show");
+      popup.classList.remove("popup-error");
+    }
+  }
+});
+

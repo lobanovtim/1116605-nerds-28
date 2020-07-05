@@ -291,54 +291,51 @@ padding: 48px 0 0 0;
 /* Slider contols */
 
 .slider-controls-list {
+  display: inline-block;
   list-style: none;
   position: absolute;
-  display: flex;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
-  left: 641px;
-  top: 301px;
-  z-index: 10;
+  left: 50%;
+  top: 320px;
 }
 
-.dot {
+.slider-control {
+  padding: 0 0 0 0;
+}
+
+.input-slider-control {
+  position: absolute;
+  margin: 0 34px 0 0;
+}
+
+.input-slider-control+label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
   width: 18px;
   height: 18px;
   cursor: pointer;
   border-radius: 50%;
   background-color: var(--basic-white);
-  margin: 0 0 0 10px;
+  z-index: 11;
 }
 
-.current-dot {
-  display: block;
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: var(--basic-white);
-  margin: 0 0 0 10px;
-}
-
-.current-dot::after {
-  display: block;
+.input-slider-control:checked+label::after {
   position: absolute;
   content: "";
   width: 8px;
   height: 8px;
   top: 5px;
-  left: 15px;
+  left: 5px;
   cursor: pointer;
   border-width: 2px;
   border-style: solid;
   border-radius: 50%;
   border-color: var(--special-border-form);
   box-sizing: border-box;
-  z-index: 1;
-}
-
-.current-dot:hover::after {
-  display: block;
+  z-index: 12;
 }
 
 
@@ -1367,11 +1364,11 @@ cursor: not-allowed;
   background-color: var(--basic-white);
 }
 
-.popup-close {
+.popup-container {
   display: none;
 }
 
-.popup-show {
+.popup-container—show {
   display: block;
   animation: bounce 0.3s;
   }
