@@ -12,11 +12,17 @@
   --basic-coral-active: #D7373B;
   --basic-grey-hover: #DFDFDF;
   --basic-grey-active: #D5D5D5;
+  --basic-green-hover: #00BC6C;
+  --basic-gold-hover: #EAB534;
+  --basic-gold-active: #E5A722;
   --special: #4D4D4D;
   --special-toogle: #ABABAB;
   --special-toggle-line: #00CA74;
   --special-border-form: #D7DCDE;
   --special-border-form-hover: #B4B9BB;
+  --range-cotrols: #f1f1f1;
+  --scale: #d7dcde;
+  --bar: #00CA74;
 }
 
 /* Global */
@@ -409,6 +415,7 @@ img {
   height: 2px;
   width: 25px;
   margin: 0 11px 4px 0;
+  vertical-align: baseline;
 }
 
 .digits {
@@ -487,21 +494,25 @@ img {
 .html-academy {
   display: inline-block;
   margin: 7px 0 0px 32px;
+  vertical-align: baseline;
 }
 
 .barbershop {
   display: inline-block;
   margin: -4px 0 0px 47px;
+  vertical-align: baseline;
 }
 
 .pink {
   display: inline-block;
   margin: 0px 0px 4px 60px;
+  vertical-align: baseline;
 }
 
 .mishka {
   display: inline-block;
   margin: 1px 0 0 63px;
+  vertical-align: baseline;
 }
 
 .partners-item:nth-child(4n),
@@ -552,6 +563,7 @@ img {
   border: none;
   outline: none;
   cursor: pointer;
+  vertical-align: baseline;
 }
 
 .button--coral {
@@ -573,12 +585,12 @@ img {
 
 .button--green:hover,
 .button--green:focus {
-  background-color: #00BC6C;
+  background-color: var(--basic-green-hover);
 }
 
 .button--gold:hover,
 .button--gold:focus {
-  background-color: #EAB534;
+  background-color: var(--basic-gold-hover);
 }
 
 .button--coral:active {
@@ -592,7 +604,7 @@ img {
 }
 
 .button--gold:active {
-  background-color: #E5A722;
+  background-color: var(--basic-gold-active);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
@@ -615,6 +627,7 @@ img {
 
 .button-contacts {
   margin: 34px 0 0 0;
+  padding: 16px 0 15px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -718,7 +731,7 @@ img {
 /* Contacts */
 
 .contacts {
-  position: relative;
+  position: absolute;
   background-color: var(--basic-white);
   width: 220px;
   padding: 50px;
@@ -822,19 +835,19 @@ img {
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #f1f1f1;
+  background-color: var(--range-cotrols);
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background: var(--scale);
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background-color: #00CA74;
+  background-color: var(--bar);
 }
 
 .range-controls .toggle {
@@ -1041,7 +1054,7 @@ img {
 }
 
 .sort-dir-up {
-  background-image: url(/img/icon-down-dir.svg);
+  background-image: url(../img/icon-down-dir.svg);
   background-repeat: no-repeat;
   position: absolute;
   transform: rotate(180deg);
@@ -1051,7 +1064,7 @@ img {
 }
 
 .sort-dir-down {
-  background-image: url(/img/icon-down-dir.svg);
+  background-image: url(../img/icon-down-dir.svg);
   background-repeat: no-repeat;
   position: absolute;
   top: 0px;
@@ -1109,6 +1122,7 @@ img {
   margin: 0 auto 12px auto;
   padding: 0;
   font-weight: bold;
+  color: inherit;
   font-size: 18px;
   line-height: 30px;
 }
@@ -1224,6 +1238,7 @@ img {
   height: 79px;
   border-radius: 50%;
   background-color: var(--basic-white-grey);
+  vertical-align: baseline;
 }
 
 .social-item--vk {
@@ -1256,7 +1271,7 @@ img {
 }
 
 .social-item:active {
-  background-color: #FFFFFF;
+  background-color: var(--basic-white);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
@@ -1300,6 +1315,7 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white-grey);
   border-radius: 3px;
+  vertical-align: baseline;
 }
 
 .pagination-item {
@@ -1326,6 +1342,7 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
   border-radius: 3px;
+  vertical-align: baseline;
 }
 
 .pagination-link-current:hover,
@@ -1416,7 +1433,7 @@ img {
   height: 21px;
   margin: 0 -10px 0 0;
   padding: 0;
-  background-image: url(/img/close-cross.svg);
+  background-image: url(../img/close-cross.svg);
   background-repeat: no-repeat;
 }
 

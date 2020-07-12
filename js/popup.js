@@ -21,6 +21,7 @@ try {
 
 popuplink.addEventListener("click", function () {
   popup.classList.add(popupClassShow);
+  event.preventDefault();
   mandatory.forEach(function (mandatory) {
     mandatory.removeAttribute("required");
   });
@@ -55,7 +56,7 @@ window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (popup.classList.contains(popupClassShow)) {
       popup.classList.remove(popupClassShow);
-      popup.classList.remove(popupClassError);
+      popup.classList.remove("popup-error");
     }
   }
 });

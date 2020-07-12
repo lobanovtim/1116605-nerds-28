@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <title>Мазагин готовых шаблонов</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style-min.css" rel="stylesheet">
+  <link href="/css/normalize.css" rel="stylesheet">
+  <link href="/css/style-min.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <nav class="container">
       <a class="logo" href="index.html">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nerds»" />
+        <img src="/img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nerds»" />
       </a>
       <ul class="nav-list">
         <li class="nav-item"><a href="blank.html">студия</a></li>
@@ -27,7 +27,7 @@
   <div class="container catalog-wrapper">
     <aside class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form action="https://echo.nerds.ru" method="get">
+      <form action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-item">
           <legend>Стоимость:</legend>
           <div class="range-filter">
@@ -35,8 +35,8 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="toggle toggle-min" tabindex="0"></div>
-              <div class="toggle toggle-max" tabindex="0"></div>
+              <div class="toggle toggle-min" tabindex="0"><p class="visually-hidden">уменьшение стоимости в фильтре</p></div>
+              <div class="toggle toggle-max" tabindex="0"><p class="visually-hidden">увелечение стоимости в фильтре</p></div>
             </div>
             <div class="price-controls">
               <label class="min-price">
@@ -119,7 +119,9 @@
             </a>
             <div class="popup-buy">
               <div class="popup-buy-wrapper">
-                <h3 class="catalog-title">SEDONA</h3>
+                <a class="catalog-title" href="modal.html">
+                  <h3>SEDONA</h3>
+                </a>
                 <p class="price-item">Информационный сайт для туристов
                 </p>
                 <button class="button button--block button--coral" type="button">9 900 ₽</button>
@@ -132,7 +134,9 @@
             </a>
             <div class="popup-buy">
               <div class="popup-buy-wrapper">
-                <h3 class="catalog-title">PINK</h3>
+                <a class="catalog-title" href="modal.html">
+                  <h3>PINK</h3>
+                </a>
                 <p class="price-item">Взгляните на жизнь ярче!
                 </p>
                 <button class="button button--block button--coral" type="button">9 900 ₽</button>
@@ -145,7 +149,9 @@
             </a>
             <div class="popup-buy">
               <div class="popup-buy-wrapper">
-                <h3 class="catalog-title">BORODINSKI</h3>
+                <a class="catalog-title" href="modal.html">
+                  <h3>BORODINSKI</h3>
+                </a>
                 <p class="price-item">Стильный барбершоп
                 </p>
                 <button class="button button--block button--coral" type="button">9 900 ₽</button>
@@ -158,7 +164,9 @@
             </a>
             <div class="popup-buy">
               <div class="popup-buy-wrapper">
-                <h3 class="catalog-title">MISHKA</h3>
+                <a class="catalog-title" href="modal.html">
+                  <h3>MISHKA</h3>
+                </a>
                 <p class="price-item">Милые штуки ручной работы для дома
                 </p>
                 <button class="button button--block button--coral" type="button">9 900 ₽</button>
@@ -171,7 +179,9 @@
             </a>
             <div class="popup-buy">
               <div class="popup-buy-wrapper">
-                <h3 class="catalog-title">UA+</h3>
+                <a class="catalog-title" href="modal.html">
+                  <h3>UA+</h3>
+                </a>
                 <p class="price-item">Учеба еще никогда не была такой интересной!
                 </p>
                 <button class="button button--block button--coral" type="button">9 900 ₽</button>
@@ -184,7 +194,9 @@
             </a>
             <div class="popup-buy">
               <div class="popup-buy-wrapper">
-                <h3 class="catalog-title">КВАСТ</h3>
+                <a class="catalog-title" href="modal.html">
+                  <h3>КВАСТ</h3>
+                </a>
                 <p class="price-item">Крафтовый квас всему голова
                 </p>
                 <button class="button button--block button--coral" type="button">9 900 ₽</button>
@@ -225,9 +237,9 @@
           тел.
           <a class="phone-number" href="tel:88122757575">+7 (812) 275-75-75</a>
         </span>
-        <button class="button button-contacts" type="button">
+        <a href="feedback.html" class="button button-contacts">
           напишите нам
-        </button>
+        </a>
       </div>
     </div>
   </section>
@@ -253,7 +265,9 @@
         </ul>
         <div class="footer-info">
           <h6 class="footer-tagline">Давайте дружить, это выгодно!</h6>
-          <p class="footer-content">Скидка 10% для друзей из социальных сетей.</p>
+          <p class="footer-content">
+            Скидка 10% для друзей из социальных сетей.
+          </p>
         </div>
       </div>
     </section>
@@ -288,6 +302,6 @@
       </form>
     </div>
   </section>
-  <script src="js/popup-min.js"></script>
+  <script src="/js/popup-min.js"></script>
 </body>
 </html>
