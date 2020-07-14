@@ -13,6 +13,7 @@
   --basic-grey-hover: #DFDFDF;
   --basic-grey-active: #D5D5D5;
   --basic-green-hover: #00BC6C;
+  --basic-green-active: #00AA62;
   --basic-gold-hover: #EAB534;
   --basic-gold-active: #E5A722;
   --special: #4D4D4D;
@@ -350,6 +351,15 @@ img {
   transform: translate(-50%, -50%);
 }
 
+#first-slide:checked:focus ~ .dots .dots-item:nth-child(1)::after,
+#second-slide:checked:focus ~ .dots .dots-item:nth-child(2)::after,
+#third-slide:checked:focus ~ .dots .dots-item:nth-child(3)::after { 
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--basic-dark-grey);
+
+}
+
 /* About */
 .about {
   display: flex;
@@ -599,7 +609,7 @@ img {
 }
 
 .button--green:active {
-  background-color: #00AA62;
+  background-color: var(--basic-green-active);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
@@ -937,6 +947,11 @@ img {
   opacity: 1;
 }
 
+.filter-input-radio:hover+label::before,
+.filter-input-radio:focus+label::before {
+  opacity: 1;
+}
+  
 .filter-input-checkbox:disabled+label::before {
   opacity: 0.1;
 }
@@ -975,6 +990,12 @@ img {
 .filter-input-radio:active+label::after,
 .filter-input-radio:active+label::before {
   opacity: 1;
+
+}
+
+.input-radio-list:focus+label::after,
+.input-radio-list:focus+label::before {
+  opacity: 1;
 }
 
 .filter-input-radio:disabled+label::after,
@@ -990,6 +1011,7 @@ img {
 .filter-checkbox label {
   padding-left: 6px;
 }
+
 
 /* Sort */
 .sort-container {
@@ -1118,9 +1140,18 @@ img {
   justify-content: center;
 }
 
-.catalog-title {
-  margin: 0 auto 12px auto;
+.catalog-link {
+  margin: 0 auto 0 auto;
   padding: 0;
+  font-weight: bold;
+  color: inherit;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.catalog-title {
+  padding: 0;
+  margin: 26px 0 11px 0;
   font-weight: bold;
   color: inherit;
   font-size: 18px;
@@ -1149,7 +1180,7 @@ img {
   width: 360px;
   min-height: 560px;
   margin-right: 40px;
-  margin-bottom: 28px;
+  margin-bottom: 21px;
   padding-top: 40px;
   line-height: 1;
 }
@@ -1165,10 +1196,6 @@ img {
   top: 0;
   left: 0;
   opacity: 0.12;
-}
-
-.catalog-item a {
-  padding: 0;
 }
 
 .catalog-item:nth-child(2n) {
@@ -1191,14 +1218,14 @@ img {
   right: 0;
   text-align: center;
   background-color: var(--basic-white-grey);
-  padding: 26px 80px 44px 80px;
+  padding: 0 80px 52px 80px;
 }
 
 .catalog-item:hover .popup-buy {
   display: block;
 }
 
-.catalog-item:focus .popup-buy {
+.catalog-item:focus-within .popup-buy {
   display: block;
 }
 
