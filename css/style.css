@@ -425,7 +425,7 @@ img {
   height: 2px;
   width: 25px;
   margin: 0 11px 4px 0;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .digits {
@@ -504,25 +504,25 @@ img {
 .html-academy {
   display: inline-block;
   margin: 7px 0 0px 32px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .barbershop {
   display: inline-block;
   margin: -4px 0 0px 47px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .pink {
   display: inline-block;
   margin: 0px 0px 4px 60px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .mishka {
   display: inline-block;
   margin: 1px 0 0 63px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .partners-item:nth-child(4n),
@@ -573,7 +573,6 @@ img {
   border: none;
   outline: none;
   cursor: pointer;
-  vertical-align: baseline;
 }
 
 .button--coral {
@@ -1265,7 +1264,7 @@ img {
   height: 79px;
   border-radius: 50%;
   background-color: var(--basic-white-grey);
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .social-item--vk {
@@ -1342,7 +1341,7 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white-grey);
   border-radius: 3px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .pagination-item {
@@ -1369,7 +1368,7 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
   border-radius: 3px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .pagination-link-current:hover,
